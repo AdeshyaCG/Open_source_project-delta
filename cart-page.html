@@ -137,11 +137,7 @@
 
                 <div class="promo">
 
-                    <input
-                        type="text"
-                        id="promo-code"
-                        placeholder="Promo code"
-                    >
+                    <input type="text" id="promo-code" placeholder="Promo code">
 
                     <button id="apply-promo">
                         Apply
@@ -282,6 +278,193 @@
         <p class="copyright">
             © 2026 NovaCart. All rights reserved.
         </p>
+
+        <!-- ================= AI SHOPPING ADVISOR ================= -->
+
+        <section class="ai-advisor">
+
+            <div class="ai-header">
+
+                <div class="ai-title">
+
+                    <div class="ai-icon">
+                        ✦
+                    </div>
+
+                    <div>
+                        <p class="ai-label">AI SHOPPING ADVISOR</p>
+                        <h2>Should You Buy Now?</h2>
+                        <p>
+                            Our AI analyzes price trends and your cart to help
+                            you choose the right time to buy.
+                        </p>
+                    </div>
+
+                </div>
+
+                <span class="ai-status">
+                    ● AI ANALYZED
+                </span>
+
+            </div>
+
+
+            <div class="ai-grid">
+
+                <!-- AI VERDICT -->
+
+                <div class="ai-verdict">
+
+                    <div class="verdict-top">
+
+                        <span class="verdict-badge">
+                            ✦ AI Recommendation
+                        </span>
+
+                        <span class="confidence">
+                            91% confidence
+                        </span>
+
+                    </div>
+
+                    <h3 id="ai-verdict-title">
+                        Good Time to Buy
+                    </h3>
+
+                    <p id="ai-verdict-text">
+                        Prices are currently below the recent average.
+                        Based on the current trend, buying now could be
+                        a good opportunity.
+                    </p>
+
+
+                    <div class="ai-metrics">
+
+                        <div class="metric">
+
+                            <span>Current Price</span>
+
+                            <strong id="ai-current-price">
+                                ₹4,497
+                            </strong>
+
+                        </div>
+
+
+                        <div class="metric">
+
+                            <span>Average Price</span>
+
+                            <strong id="ai-average-price">
+                                ₹5,120
+                            </strong>
+
+                        </div>
+
+
+                        <div class="metric">
+
+                            <span>Potential Saving</span>
+
+                            <strong class="saving" id="ai-saving">
+                                ₹623
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRICE TREND -->
+
+                <div class="price-chart-card">
+
+                    <div class="chart-heading">
+
+                        <div>
+                            <h3>Price Trend</h3>
+
+                            <p>
+                                Estimated price movement
+                            </p>
+                        </div>
+
+                        <select id="chart-period">
+
+                            <option value="7">7 Days</option>
+                            <option value="30" selected>30 Days</option>
+                            <option value="90">90 Days</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart-container">
+
+                        <canvas id="price-chart"></canvas>
+
+                    </div>
+
+
+                    <div class="chart-info">
+
+                        <span>
+                            ● Current
+                        </span>
+
+                        <span>
+                            ↓ Lower price is better
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BEST TIME -->
+
+            <div class="best-time">
+
+                <div class="best-time-icon">
+                    ⏱
+                </div>
+
+                <div class="best-time-content">
+
+                    <span>AI PREDICTION</span>
+
+                    <h3 id="best-time-title">
+                        Best time to purchase: Now
+                    </h3>
+
+                    <p id="best-time-description">
+                        Current prices are around 12% lower than the
+                        recent average. Waiting may not provide
+                        significant savings.
+                    </p>
+
+                </div>
+
+                <div class="buy-score">
+
+                    <strong id="buy-score">
+                        91
+                    </strong>
+
+                    <span>/100</span>
+
+                    <small>Buy Score</small>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </footer>
 
