@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="container">
+    <div class="header-section">
+      <h1>My Account Profile</h1>
+      <p>Manage your personal details, delivery addresses, and view purchase history</p>
+    </div>
+
+    <!-- User Profile Form -->
+    <div class="card">
+      <h2 class="form-title">Personal Details</h2>
+      <form action="#" method="POST">
+        
+        <!-- 1. Full Name -->
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input 
+            type="text" 
+            id="fullName" 
+            name="fullName" 
+            placeholder="e.g. John Doe" 
+            required 
+          />
+        </div>
+
+        <!-- 2. Phone Number -->
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="+91 98765 43210" 
+            required 
+          />
+        </div>
+
+        <!-- 3. Gender -->
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="gender-options">
+            <label class="radio-label">
+              <input type="radio" name="gender" value="male" required /> Male
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="female" /> Female
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="other" /> Other
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="prefer_not_to_say" /> Prefer not to say
+            </label>
+          </div>
+        </div>
+
+        <!-- 4. Address -->
+        <div class="form-group">
+          <label for="address">Shipping Address</label>
+          <textarea 
+            id="address" 
+            name="address" 
+            rows="3" 
+            placeholder="Flat/House No., Street, City, State, PIN code" 
+            required
+          ></textarea>
+        </div>
+
+        <!-- 5. Additional Shopping History / Notes in Form -->
+        <div class="form-group">
+          <label for="shoppingHistoryNotes">Shopping Preferences & Notes (Optional)</label>
+          <textarea 
+            id="shoppingHistoryNotes" 
+            name="shoppingHistoryNotes" 
+            rows="2" 
+            placeholder="Favorite categories, preferred delivery slots, etc."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Save Profile Changes</button>
+      </form>
+    </div>
+
+    <!-- 6. User Shopping History Display Section -->
+    <div class="card">
+      <h2 class="form-title">Recent Shopping History</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Items</th>
+              <th>Total Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#ORD-9021</td>
+              <td>Sep 24, 2026</td>
+              <td>Wireless Headphones, Type-C Cable</td>
+              <td>₹2,499</td>
+              <td><span class="badge badge-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+              <td>#ORD-8810</td>
+              <td>Sep 15, 2026</td>
+              <td>Ergonomic Keyboard</td>
+              <td>₹1,850</td>
+              <td><span class="badge badge-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+              <td>#ORD-9134</td>
+              <td>Sep 30, 2026</td>
+              <td>Smart Watch Band (Black)</td>
+              <td>₹699</td>
+              <td><span class="badge badge-shipped">Shipped</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
